@@ -34,4 +34,4 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth) 
   
 # update the status 
-api.update_status(status=tweet) 
+api.update_with_media(filename="robot.gif", status=tweet)
